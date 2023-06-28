@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="0.7"
+        android:background="#FFF7D4"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="1dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF7D4"
+            android:columnCount="1"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/txtfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:fontFamily="@font/proximanovasemibold"
+                android:paddingLeft="10dp"
+                android:text="Chi tiết giỏ hàng"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtSL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:fontFamily="@font/proximanovalight"
+                android:paddingLeft="10dp"
+                android:text="4 Món"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="20dp" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDetailOrders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/btnPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:padding="13dp"
+                android:textColor="#000000"
+                android:backgroundTint="@drawable/rounded_button"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Quay lại"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

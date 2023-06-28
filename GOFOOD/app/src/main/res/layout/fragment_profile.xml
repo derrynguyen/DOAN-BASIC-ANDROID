@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="1dp"
+        android:background="#FFD95A"
+        android:gravity="center_vertical|center_horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Thông tin người dùng"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@mipmap/avatar_foreground" />
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingLeft="20dp"
+
+        >
+        <GridLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <TextView
+                android:id="@+id/txtLabelFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Họ và tên:"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:fontFamily="@font/proximanovalight"
+                android:text="Nguyễn Thanh Hải"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/txtLabelPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Số điện thoại:"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:fontFamily="@font/proximanovalight"
+                android:text="0903869997"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/txtLabelPhewone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Địa chỉ:"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtAddreas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:fontFamily="@font/proximanovalight"
+                android:text="47/6C Khu pho 2 Phuong Dakao Quan 13"
+                android:textColor="#03001C"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal" />
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:padding="13dp"
+                android:textColor="#000000"
+                android:backgroundTint="@drawable/rounded_button"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Đăng xuất"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/lable1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03001C"
+            android:text="Mã đơn hàng"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtOrderDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03001C"
+            android:text="20000"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/lable2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03001C"
+            android:text="Ngày tạo"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtCreateAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03001C"
+            android:text="2023-05-19 00:00:00"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDetailOrders"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:background="#FFD93D"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawableTint="#FFD93D" />
+
+
+</LinearLayout>
+

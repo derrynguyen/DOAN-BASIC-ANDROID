@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#FFD93D"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="#FFD93D"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="Xin chào"
+                android:textColor="#FFFAF4"
+                android:textFontWeight="500"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/txtFullname"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:fontFamily="@font/proximanovasemibold"
+                android:text="NGUYEN THANH HAI"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="500"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+
+                android:src="@mipmap/banner1_foreground" />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="50"
+                android:background="@drawable/input_find"
+                android:hint="Tìm kiếm sản phẩm"
+                android:padding="10dp"
+                android:textColorHint="#A9A9A9"
+                android:inputType="text" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:id="@+id/search"
+
+            >
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
